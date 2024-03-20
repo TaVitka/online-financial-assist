@@ -95,15 +95,11 @@
   &__btns {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 24px;
 
     @include media(tablet-wide) {
       flex-direction: column;
       gap: 30px;
     }
-  }
-
-  *[class].btn {
-    padding: 8px 25px;
   }
 }

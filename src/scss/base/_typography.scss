@@ -12,19 +12,19 @@ h1,
 h2 {
   font-weight: var(--fw-600);
   line-height: 1.2;
-  text-transform: capitalize;
 }
 
 h1 {
   margin-bottom: 24px;
-  font-size: clamp(36px, 1rem + 1vi, 50px);
+  font-size: clamp(36px, 3rem + 1vi, 50px);
   color: var(--color-purple-800);
-  letter-spacing: -0,5px;
+  letter-spacing: 1.9px;
 }
 
 h2 {
   font-size: clamp(32px, 1rem + 1vi, 40px);
   color: var(--color-purple-500);
+  text-transform: capitalize;
 }
 
 h3 {
