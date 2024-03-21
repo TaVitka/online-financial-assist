@@ -11,6 +11,7 @@
     content: "";
     position: absolute;
     inset: 0;
+    z-index: -1;
     background-image: var(--icon-bg-wave);
   }
 
@@ -27,6 +28,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    max-width: 446px;
+    width: 100%;
   }
 
   &__content {
@@ -51,9 +54,25 @@
     z-index: -1;
   }
 
-  &--home {
-    .about__box {
-      max-width: 446px;
+  &--history {
+    padding: rem(70) 0;
+
+    .about__inner {
+      padding: 0 0 0 24px;
+      align-items: center;
+    }
+
+    .about__text {
+      font-size: clamp(20px, 1rem + 1vi, 23px);
+
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+
+    img {
+      object-fit: contain;
+      object-position: center 70%;
     }
   }
 
