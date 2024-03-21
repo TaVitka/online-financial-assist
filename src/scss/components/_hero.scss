@@ -42,16 +42,10 @@
     }
   }
 
-  //&--about,
-  //&--menu {
-  //  h1 {
-  //    margin-bottom: rem(24);
-  //  }
-  //}
-  //
-  //&--menu {
-  //  p {
-  //    width: 97%;
-  //  }
-  //}
+  &--services {
+    .hero__inner {
+      min-height: 661px;
+      background-position: 84% 80px;
+    }
+  }
 }
