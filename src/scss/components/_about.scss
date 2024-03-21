@@ -196,12 +196,30 @@
 
   &--tax {
     &::before {
-      background-image: var(--icon-round);
+      background-image: var(--icon-egg);
       width: 775px;
       height: 1115px;
       top: 0;
       left: 0;
       transform: translateY(-25%);
+    }
+  }
+
+  &--auditing {
+    &::before {
+      background-image: var(--icon-bubble);
+      width: 978px;
+      height: 799px;
+      top: 0;
+      left: unset;
+      right: 0;
+      transform: translateY(-46%);
+    }
+  }
+
+  &--financial {
+    .about__inner {
+      gap: 0 rem(60);
     }
   }
 }
