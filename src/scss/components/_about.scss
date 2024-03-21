@@ -139,7 +139,7 @@
   }
 
   &--service {
-    padding: rem(134) 0;
+    padding: rem(130) 0;
 
     &::before {
       background-image: none;
@@ -147,11 +147,19 @@
 
     .about__inner {
       justify-content: flex-start;
-      gap: 0 86px;
+      gap: 0 rem(82);
+    }
+
+    .about__box {
+      max-width: 486px;
     }
 
     .about__phrase {
       margin-bottom: 0;
+    }
+
+    .about__content {
+      width: 100%;
     }
 
     h2 {
@@ -162,19 +170,41 @@
 
     .about__text {
       font-size: 23px;
-      letter-spacing: 1.4px;
+      width: 100%;
     }
   }
 
   &--bookkeeping {
+    .about__text {
+      width: 86%;
+    }
+
     .about__image {
-      min-height: 436px;
+      min-height: 450px;
 
       img {
         position: absolute;
         right: 25px;
         top: 72px;
       }
+    }
+  }
+
+  &--reporting {
+    .about__inner {
+      gap: 0 rem(100);
+    }
+  }
+
+  &--tax {
+
+    &::before {
+      background-image: var(--icon-round);
+      width: 775px;
+      height: 1115px;
+      top: 0;
+      left: 0;
+      transform: translateY(-25%);
     }
   }
 }
