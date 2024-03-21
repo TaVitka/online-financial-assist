@@ -175,10 +175,6 @@
   }
 
   &--bookkeeping {
-    .about__text {
-      width: 86%;
-    }
-
     .about__image {
       min-height: 450px;
 
@@ -191,7 +187,8 @@
   }
 
   &--reporting,
-  &--payroll {
+  &--payroll,
+  &--auditing {
     .about__inner {
       gap: 0 rem(100);
     }
