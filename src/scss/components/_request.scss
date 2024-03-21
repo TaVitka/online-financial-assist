@@ -1,0 +1,63 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.request {
+  $root: &;
+  padding: rem(86) 0;
+  background: var(--gradient-secondary);
+
+  h2 {
+    margin-bottom: rem(48);
+    text-align: center;
+    color: var(--color-black);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: rem(34) rem(32);
+    background-color: var(--color-white);
+    border-radius: var(--radius-s);
+    box-shadow: var(--shadow-main);
+  }
+
+  label {
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 18px;
+    }
+  }
+
+  input,
+  textarea {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 16px;
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    line-height: 1;
+    font-weight: var(--fw-400);
+    letter-spacing: 0.4px;
+    color: var(--color-blue-700);
+    background-color: var(--color-gray-400);
+    border: none;
+    border-radius: var(--radius-s);
+
+    &::placeholder {
+      color: var(--color-gray-700);
+      opacity: 60%;
+    }
+  }
+
+  textarea {
+    min-height: rem(156);
+    padding: 16px;
+    resize: none;
+  }
+}
