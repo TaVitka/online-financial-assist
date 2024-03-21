@@ -190,14 +190,14 @@
     }
   }
 
-  &--reporting {
+  &--reporting,
+  &--payroll {
     .about__inner {
       gap: 0 rem(100);
     }
   }
 
   &--tax {
-
     &::before {
       background-image: var(--icon-round);
       width: 775px;
