@@ -1,0 +1,52 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.clients {
+  padding: rem(130) 0;
+
+  &__inner {
+    max-width: 1216px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-bottom: rem(20);
+  }
+
+  &__desc {
+    margin-bottom: rem(60);
+    font-size: 23px;
+    letter-spacing: 1.2px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__slider {
+    max-width: 812px;
+    width: 100%;
+    margin: 0;
+  }
+
+  &__slides {
+    align-items: stretch !important;
+  }
+
+  &__slide {
+    padding: rem(32) rem(24) rem(74);
+    background: var(--gradient-accent);
+    border-radius: var(--radius-main);
+
+    h3 {
+      margin-bottom: rem(75);
+      font-size: clamp(22px, 1rem + 1vi, 28px);
+      font-weight: var(--fw-600);
+    }
+
+    p {
+      letter-spacing: 1.4px;
+    }
+  }
+}
