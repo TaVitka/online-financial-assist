@@ -1,0 +1,47 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.blog {
+  padding: rem(130) 0;
+
+  &__inner {
+    max-width: 1136px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-bottom: rem(32);
+  }
+
+  &__recents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+    gap: 0 57px;
+  }
+
+  &__img {
+    margin-bottom: rem(48);
+    border-radius: var(--radius-main);
+  }
+
+  &__name,
+  &__link {
+    font-weight: var(--fw-400);
+    line-height: 1.2;
+    letter-spacing: 1.3px;
+  }
+
+  &__name {
+    margin-bottom: rem(44);
+    font-size: clamp(22px, 1rem + 1vi, 28px);
+    color: var(--color-black);
+  }
+
+  &__link {
+    font-size: clamp(18px, 1rem + 1vi, 23px);
+    color: var(--color-purple-500);
+  }
+}
