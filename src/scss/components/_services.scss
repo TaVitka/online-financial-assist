@@ -85,11 +85,11 @@
   }
 
   &--spectrum {
-    @include  cover-background;
+    @include cover-background;
 
     max-width: unset;
     padding: rem(73) 0 20px;
-    background-image: var( --icon-bg-wave);
+    background-image: var(--icon-bg-wave);
 
     h2 {
       margin-bottom: rem(128);
