@@ -5,7 +5,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: rem(168) 0 rem(148);
+  padding: rem(168) 0 16px;
 
   &__nav {
     display: flex;
@@ -76,7 +76,6 @@
   &__name {
     max-width: 164px;
     width: 100%;
-    letter-spacing: 1.1px;
   }
 
   &__text {

@@ -1,0 +1,73 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.reviews {
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 21px;
+    align-items: stretch;
+  }
+
+  &__item {
+    position: relative;
+    padding-inline: rem(30);
+    padding-block: rem(86) rem(30);
+    background-color: var(--color-white);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-main);
+  }
+
+  &__avatar {
+    position: absolute;
+    top: -35px;
+    padding: 6px;
+    overflow: hidden;
+    border-radius: var(--radius-round);
+    background: var(--gradient-border);
+
+    img {
+      border-radius: inherit;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-bottom: 20px;
+  }
+
+  &__position {
+    grid-column: 1;
+    grid-row: 2;
+    letter-spacing: 0.7px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  &__rating {
+    justify-self: flex-end;
+  }
+
+  &__txt {
+    font-size: 16px;
+    font-weight: var(--fw-600);
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    color: var(--color-blue-760);
+  }
+
+  &--home {
+    padding: rem(232) 0 rem(130);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left top;
+
+    h2 {
+      text-align: right;
+      margin-right: rem(232);
+      margin-bottom: rem(135);
+    }
+  }
+}
