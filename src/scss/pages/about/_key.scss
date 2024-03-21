@@ -1,0 +1,82 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.key {
+  padding: rem(120) 0 rem(95);
+  background: var(--gradient-section);
+
+  &__inner {
+    max-width: 1216px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-bottom: rem(60);
+    text-align: center;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: rem(40);
+    padding: 0 rem(28);
+  }
+
+  &__item {
+    max-width: 360px;
+    width: 100%;
+  }
+
+  &__year {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 86px;
+    font-size: clamp(36px, 3rem + 1vi, 50px);
+    line-height: 1.44;
+    font-weight: var(--fw-700);
+
+    &::before {
+      @include cover-background;
+
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+    }
+
+    &--inception::before {
+     background-image: url("../images/icons/inception-icon.svg");
+    }
+
+    &--expansion::before {
+      background-image: url("../images/icons/expansion-icon.svg");
+    }
+
+    &--technology::before {
+      background-image: url("../images/icons/technology-icon.svg");
+    }
+
+    &--global::before {
+      background-image: url("../images/icons/export-icon.svg");
+    }
+
+    &--industry::before {
+      background-image: url("../images/icons/industry-icon.svg");
+    }
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  &__desc {
+    width: 90%;
+    font-size: 23px;
+  }
+}
