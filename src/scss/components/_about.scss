@@ -145,6 +145,11 @@
       background-image: none;
     }
 
+    .about__inner {
+      justify-content: flex-start;
+      gap: 0 86px;
+    }
+
     .about__phrase {
       margin-bottom: 0;
     }
@@ -163,9 +168,13 @@
 
   &--bookkeeping {
     .about__image {
-      position: absolute;
-      right: 25px;
-      top: 72px;
+      min-height: 436px;
+
+      img {
+        position: absolute;
+        right: 25px;
+        top: 72px;
+      }
     }
   }
 }
