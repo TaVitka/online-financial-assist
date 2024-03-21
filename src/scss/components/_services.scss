@@ -83,4 +83,21 @@
     line-height: 1.6;
     letter-spacing: 1.1px;
   }
+
+  &--spectrum {
+    @include  cover-background;
+
+    max-width: unset;
+    padding: rem(73) 0 20px;
+    background-image: var( --icon-bg-wave);
+
+    h2 {
+      margin-bottom: rem(128);
+      text-align: center;
+    }
+
+    .services__grid {
+      margin: 0 auto;
+    }
+  }
 }
