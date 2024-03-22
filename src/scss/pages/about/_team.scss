@@ -2,19 +2,15 @@
 @use "../../utils/mixins/"as*;
 
 .team {
-  padding: rem(120) 0 rem(140);
-
-  h2,
-  &__subtitle {
-    margin-bottom: 20px;
-  }
 
   h2 {
+    margin-bottom: 10px;
     line-height: 1;
     text-align: center;
   }
 
   &__subtitle {
+    margin-bottom: 20px;
     font-size: clamp(20px, 1rem + 1vi, 23px);
     line-height: 1.2;
     font-weight: var(--fw-400);
@@ -55,6 +51,5 @@
 
   &__text {
     font-size: 23px;
-    line-height: 1.16;
   }
 }

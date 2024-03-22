@@ -2,7 +2,7 @@
 @use "../../utils/mixins/"as*;
 
 .key {
-  padding: rem(120) 0 rem(95);
+  padding: rem(120) 0 rem(86);
   background: var(--gradient-section);
 
   &__inner {
@@ -76,7 +76,6 @@
   }
 
   &__desc {
-    width: 90%;
     font-size: 23px;
   }
 }
