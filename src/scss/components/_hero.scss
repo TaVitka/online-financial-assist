@@ -27,7 +27,6 @@
     width: 100%;
     margin-bottom: rem(40);
     color: var(--color-black);
-    letter-spacing: 1.44px;
   }
 
   &--home {
@@ -60,7 +59,6 @@
   }
 
   &--security {
-
     .hero__inner {
       min-height: 868px;
       padding-top: rem(130);
@@ -83,7 +81,7 @@
 
     .hero__item {
       width: fit-content;
-      padding: rem(28) rem(40);
+      padding: rem(28) rem(44);
       border-radius: calc(var(--radius-m) * 5);
       font-size: 14;
 
@@ -104,7 +102,6 @@
       }
 
       p {
-        letter-spacing: 1.6px;
         color: var(--color-white);
       }
     }

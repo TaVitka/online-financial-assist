@@ -2,7 +2,7 @@
 @use "../utils/mixins/"as*;
 
 .footer {
-  padding: rem(88) 0;
+  padding: rem(84) 0;
   background-color: var(--color-dark);
 
   * {
@@ -41,7 +41,6 @@
   .copyright {
     font-size: 16px;
     line-height: 1.21;
-    letter-spacing: 0.03rem;
   }
 
   &__link {

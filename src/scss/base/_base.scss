@@ -14,7 +14,6 @@ body {
   font-style: normal;
   font-size: clamp(16px, 1vw, 20px);
   line-height: 1.5;
-  letter-spacing: 0;
   color: var(--color-gray-700);
   background-color: var(--color-white);
   font-optical-sizing: auto;
@@ -30,7 +29,7 @@ body {
 }
 
 section {
-  padding: rem(88) 0;
+  padding: rem(130) 0;
 
   @include media(tablet) {
     padding: rem(44) 0;

@@ -3,7 +3,7 @@
 
 .explain {
   position: relative;
-  padding: rem(108) 0 rem(66);
+  padding: rem(106) 0 rem(66);
 
   &::before {
     content: "";
@@ -29,7 +29,6 @@
 
   h2 {
     margin-bottom: rem(55);
-    letter-spacing: 2.2px;
   }
 
   &__items {
@@ -48,7 +47,7 @@
     }
 
     &:not(:last-of-type) {
-      margin-bottom: 40px;
+      margin-bottom: rem(41);
     }
 
     &::before {
@@ -85,19 +84,17 @@
     font-size: clamp(20px, 1rem + 1vi, 24px);
     font-weight: var(--fw-600);
     line-height: 1.1;
-    letter-spacing: 1.7px;
   }
 
   &__txt {
     font-size: clamp(18px, 1rem + 1vi, 23px);
     font-weight: var(--fw-400);
     line-height: 1.2;
-    letter-spacing: 1.7px;
   }
 
   &--works {
     h2 {
-      letter-spacing: 0;
+      letter-spacing: -0.5px;
     }
   }
 }

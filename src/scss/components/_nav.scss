@@ -46,7 +46,8 @@
   &__list {
     display: flex;
     align-items: center;
-    margin: 0 clamp(30px, rem(106.5), 106.5px) 0 0;
+    //margin: 0 clamp(30px, rem(106.5), 106.5px) 0 0;
+    margin: 0 106.5px 0 0;
 
     @include media(desktop-medium) {
       margin: 0 30px 0 0;
@@ -61,7 +62,7 @@
 
   &__item {
     &:not(:last-of-type) {
-      margin-right: rem(30);
+      margin-right: rem(20);
 
       @include media(desktop-medium) {
         margin-right: rem(15);
@@ -95,7 +96,7 @@
   &__btns {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
 
     @include media(tablet-wide) {
       flex-direction: column;

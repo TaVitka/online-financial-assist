@@ -5,7 +5,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: rem(168) 0 16px;
+  padding: rem(164) 0 16px;
 
   &__nav {
     display: flex;
@@ -17,7 +17,6 @@
   &__desc {
     margin-bottom: rem(94);
     color: var(--color-blue-770);
-    letter-spacing: 1.63px;
   }
 
   &__grid {
@@ -80,8 +79,7 @@
 
   &__text {
     font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 1.1px;
+    line-height: 1.61;
   }
 
   &--spectrum {
@@ -94,6 +92,7 @@
     h2 {
       margin-bottom: rem(128);
       text-align: center;
+      letter-spacing: -1px;
     }
 
     .services__grid {
