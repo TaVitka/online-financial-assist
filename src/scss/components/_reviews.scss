@@ -2,7 +2,6 @@
 @use "../utils/mixins/"as*;
 
 .reviews {
-
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -67,6 +66,23 @@
       margin-right: rem(232);
       margin-bottom: rem(135);
     }
+
+    @include media(tablet-wide) {
+      h2 {
+        margin-right: 0;
+      }
+
+    }
+
+    @include media(tablet) {
+      padding: 44px 0;
+      background-image: none !important;
+
+      h2 {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+    }
   }
 
   &--services {
@@ -104,6 +120,75 @@
       font-weight: var(--fw-500);
       color: var(--color-purple-500);
       text-align: center;
+    }
+  }
+
+  @include media(tablet-wide) {
+    &__item {
+      padding: 80px 10px 20px 10px;
+    }
+
+    &__info {
+     grid-template-columns: 1fr;
+    }
+
+    &__rating {
+      grid-row: 1;
+      justify-self: flex-start;
+      margin-bottom: 10px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  @include media(tablet) {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      gap: 30px;
+    }
+
+    &__item {
+      padding: 30px 10px 20px;
+
+      &:last-of-type {
+        grid-column: 1 / span 2;
+        width: 50%;
+      }
+    }
+
+    &__avatar {
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__items {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      &:last-of-type {
+        grid-column: auto;
+        width: 100%;
+      }
+    }
+
+    &__avatar {
+      width: 70px;
+      height: 70px;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &__info {
+      padding-right: 80px;
     }
   }
 }

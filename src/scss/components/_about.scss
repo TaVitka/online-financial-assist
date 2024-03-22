@@ -258,4 +258,50 @@
       }
     }
   }
+
+  @include media(tablet-wide) {
+    &__inner {
+      gap: 20px;
+      align-items: center;
+    }
+
+    &__image {
+      position: relative;
+    }
+
+    &__img {
+      inset: 0;
+      filter: opacity(0.5) blur(1px) brightness(0.5);
+    }
+  }
+
+  @include media(tablet) {
+    padding: rem(44) 0;
+
+    &__text {
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @include media(mobile-l) {
+    &__inner {
+      flex-direction: column-reverse;
+    }
+
+    &__box {
+      max-width: 100%;
+    }
+
+    &__image,
+    img {
+      width: 100%;
+    }
+
+    img {
+      height: unset;
+      aspect-ratio: 4 / 3;
+    }
+  }
 }

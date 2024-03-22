@@ -60,4 +60,16 @@
     padding: 16px;
     resize: none;
   }
+
+  @include media(tablet) {
+    padding: rem(44) 0;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    &__form {
+      padding: 20px 15px;
+    }
+  }
 }

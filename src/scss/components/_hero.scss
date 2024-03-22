@@ -106,4 +106,36 @@
       }
     }
   }
+
+  @include media(tablet) {
+    &__inner {
+      min-height: 450px;
+      padding: 44px 0;
+      background-position: right center;
+      background-size: 55%;
+    }
+
+    &__content {
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    h1 {
+      width: 80%;
+    }
+
+    &__desc {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include media(mobile-s) {
+    &__inner {
+      background-image: none !important;
+    }
+
+    h1 {
+      width: 100%;
+    }
+  }
 }

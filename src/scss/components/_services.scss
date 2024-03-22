@@ -32,8 +32,6 @@
 
   &__item {
     position: relative;
-    max-width: 372px;
-    width: 100%;
     padding: 10px 10px 10px rem(123);
 
     &::before {
@@ -97,6 +95,66 @@
 
     .services__grid {
       margin: 0 auto;
+    }
+  }
+
+  @include media(tablet) {
+    padding: rem(68) 0 rem(44);
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+      justify-items: center;
+      margin-bottom: 30px;
+    }
+
+    &__nav {
+      .btn {
+        display: none;
+      }
+    }
+  }
+
+  @include media(mobile-l) {
+    &__nav,
+    &__desc {
+      margin-bottom: 30px;
+    }
+
+    &__nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      padding: 10px 10px 10px 80px;
+
+      &::before {
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        transform: translateY(-50%);
+      }
+    }
+
+    &__name {
+      max-width: 100%;
+    }
+  }
+
+  @include media(mobile-s) {
+    &__item {
+      padding: 60px 10px 10px 10px;
+
+      &::before {
+        top: 0;
+        transform: translateY(0);
+      }
     }
   }
 }

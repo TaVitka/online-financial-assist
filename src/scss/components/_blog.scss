@@ -2,8 +2,6 @@
 @use "../utils/mixins/"as*;
 
 .blog {
-  padding: rem(130) 0;
-
   &__inner {
     max-width: 1136px;
     width: 100%;
@@ -91,4 +89,35 @@
     }
   }
 
+  @include media(tablet) {
+    &__recents {
+      grid-template-columns: 1fr;
+      gap: rem(60);
+    }
+
+    &__recent {
+      padding: 0 0 60px;
+      box-shadow: var(--shadow-main);
+      border-radius: var(--radius-main);
+    }
+
+    &__img {
+      margin-bottom: 20px;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 6 / 3;
+      border-radius: var(--radius-main) var(--radius-main) 0 0;
+    }
+
+    &__name,
+    &__link {
+      padding: 0 20px;
+    }
+  }
+
+  @include media(mobile-m) {
+    &__recent {
+      padding: 0 0 30px;
+    }
+  }
 }

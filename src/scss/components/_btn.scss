@@ -36,7 +36,11 @@
 
   &--large {
     padding: 20px 32px;
-    font-size: clamp(20px, 1rem + 1vi, 22px)
+    font-size: clamp(20px, 1rem + 1vi, 22px);
+
+    @include media(tablet) {
+      padding: 16px 20px;
+    }
   }
 
   &--accent {
@@ -67,6 +71,18 @@
       background-color: var(--color-gray-600);
       border-color: var(--color-gray-600);
       color: var(--color-milk-100)
+    }
+  }
+
+  &--mobile {
+    display: none;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  @include media(tablet) {
+    &--mobile {
+      display: block;
     }
   }
 }
