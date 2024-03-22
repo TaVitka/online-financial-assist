@@ -5,6 +5,16 @@
   $root: &;
   padding: 0;
 
+  .overlay {
+    &::before {
+      opacity: 0;
+
+      @include media(mobile-l) {
+        opacity: 1;
+      }
+    }
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -38,6 +48,25 @@
   &--about {
     .hero__inner {
       background-position: 81% 80px;
+
+      @include media(tablet-wide) {
+        background-position: 100% center;
+        background-size: 40%;
+      }
+
+      @include media(tablet) {
+        background-size: 30%;
+      }
+
+      @include media(mobile-l) {
+        background-image: none !important;
+      }
+    }
+
+    @include media(mobile-l) {
+      .hero__desc {
+        color: var(--color-white);
+      }
     }
   }
 
@@ -132,6 +161,16 @@
   @include media(mobile-s) {
     &__inner {
       background-image: none !important;
+
+      &--about,
+      &--services,
+      &--works,
+      &--security {
+
+        .hero__inner {
+          background-image: none !important;
+        }
+      }
     }
 
     h1 {

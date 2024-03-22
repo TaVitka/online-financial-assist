@@ -90,6 +90,14 @@
     .about__inner {
       padding: 0 0 0 24px;
       align-items: center;
+
+      @include media(tablet-wide) {
+        padding: 0;
+      }
+
+      @include media(mobile-l) {
+        flex-direction: column;
+      }
     }
 
     .about__text {
@@ -130,6 +138,41 @@
     .about__text {
       width: 87%;
       font-size: 23px;
+    }
+
+    @include media(desktop) {
+      .about__inner,
+      .about__cards {
+        gap: 30px
+      }
+
+      .about__inner {
+        flex-direction: column;
+      }
+
+      .about__phrase {
+        order: 1;
+      }
+
+      .about__content {
+        order: 2;
+      }
+
+      .about__box,
+      .about__cards {
+        max-width: 100%;
+      }
+    }
+
+    @include media(mobile-l) {
+      .about__text {
+        width: 100%;
+      }
+
+      .about__cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
     }
   }
 
@@ -272,6 +315,10 @@
     &__img {
       inset: 0;
       filter: opacity(0.5) blur(1px) brightness(0.5);
+    }
+
+    img {
+      height: auto;
     }
   }
 

@@ -26,8 +26,7 @@
   }
 
   &__item {
-    max-width: 360px;
-    width: 100%;
+    flex-basis: 31%;
   }
 
   &__year {
@@ -77,5 +76,45 @@
 
   &__desc {
     font-size: 23px;
+  }
+
+  @include media(desktop) {
+    &__grid {
+      justify-content: flex-start;
+      padding: 0;
+    }
+
+    &__item {
+      flex-basis: 45%;
+
+      &:last-of-type {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @include  media(tablet) {
+    padding: rem(44) 0;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__item {
+      flex: 100%;
+    }
+
+    &__year {
+      padding-left: 70px;
+      font-size: clamp(36px, 3rem + 1vi, 38px);
+      &::before {
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        transform: translateY(-50%);
+      }
+    }
   }
 }

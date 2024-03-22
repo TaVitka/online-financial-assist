@@ -102,4 +102,9 @@
     background-image: url("../images/icons/arrow-next.svg");
   }
 
+  @include media(tablet-wide) {
+    top: unset;
+    right: 10%;
+    bottom: 20px;
+  }
 }

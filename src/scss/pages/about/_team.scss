@@ -52,4 +52,33 @@
   &__text {
     font-size: 23px;
   }
+
+  @include media(tablet) {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      padding: 20px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    &__avatar {
+      margin-bottom: 0;
+    }
+
+    &__bio {
+      padding: 0;
+    }
+  }
+
+  @include  media(mobile-m) {
+    &__item {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 }
