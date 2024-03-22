@@ -58,4 +58,54 @@
       max-width: 100%;
     }
   }
+
+  &--security {
+
+    .hero__inner {
+      padding-top: rem(130);
+      background-position: 100% 48px;
+    }
+
+    .hero__content {
+      max-width: 828px;
+      margin-inline: rem(50) 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .hero__desc {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .hero__item {
+      width: fit-content;
+      padding: rem(28) rem(40);
+      border-radius: calc(var(--radius-m) * 5);
+      font-size: 14;
+
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+
+      &:first-child {
+        background-color: var(--color-purple-691);
+      }
+
+      &:nth-child(2) {
+        background-color: var(--color-red-391);
+      }
+
+      &:last-child {
+        background-color: var(--color-purple-391);
+      }
+
+      p {
+        letter-spacing: 1.6px;
+        color: var(--color-white);
+      }
+    }
+  }
 }
