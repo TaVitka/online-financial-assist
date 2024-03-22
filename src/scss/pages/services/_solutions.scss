@@ -1,0 +1,39 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.solutions {
+  padding: 0 0 rem(141);
+  background-image: var(--icon-wave-reverse);
+
+  &__inner {
+    max-width: 1136px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-bottom: rem(60);
+    padding-right: rem(110);
+    text-align: right;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 rem(61);
+    max-width: 1095px;
+    width: 100%;
+  }
+
+  h3 {
+    margin-bottom: 16px;
+    font-size: clamp(20px, 1rem + 1vi, 22px);
+    line-height: 1.25;
+  }
+
+  &__content {
+    p {
+      font-size: clamp(20px, 1rem + 1vi, 23px);
+    }
+  }
+}
