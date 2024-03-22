@@ -48,4 +48,14 @@
       background-position: 84% 80px;
     }
   }
+
+  &--works {
+    .hero__inner {
+      background-position: 89% 80px;
+    }
+
+    .hero__desc {
+      max-width: 100%;
+    }
+  }
 }
