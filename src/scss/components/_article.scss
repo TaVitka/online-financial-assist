@@ -1,0 +1,34 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.article {
+  padding: rem(69) 0 rem(149);
+
+  h1 {
+    margin-bottom: 23px;
+    font-size: clamp(32px, 2rem + 1vi, 40px);
+    line-height: 1.21;
+    color: var(--color-dark);
+  }
+
+  &__date {
+    margin-bottom: 40px;
+    font-size: clamp(18px, 1rem + 1vi, 23px);
+    line-height: 1.2;
+    color: var(--color-gray-700);
+  }
+
+  &__image {
+    margin-bottom: 40px;
+    border-radius: calc(var(--radius-m) * 5);
+    object-position: center 35%;
+  }
+
+  &__text {
+    color: var(--color-black);
+
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+  }
+}
