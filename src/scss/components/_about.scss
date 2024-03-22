@@ -222,4 +222,40 @@
       gap: 0 rem(60);
     }
   }
+
+  &--benefits {
+    padding: rem(130) 0;
+
+    &::before {
+      background-image: none;
+    }
+
+    h2 {
+      max-width: 1136px;
+      width: 100%;
+      margin: 0 auto 10px;
+      font-size: clamp(32px, 2rem + 1vi, 40px);
+      color: var(--color-purple-500);
+      letter-spacing: 1.2px;
+    }
+
+    .about__inner {
+      align-items: center;
+      gap: 0 rem(80);
+    }
+
+    img {
+      object-fit: none;
+    }
+
+    .about__box {
+      max-width: 500px;
+    }
+
+    p {
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
