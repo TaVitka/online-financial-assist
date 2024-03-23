@@ -55,4 +55,31 @@
       margin-bottom: 12px;
     }
   }
+
+  @include media(tablet) {
+    padding: 44px 0;
+
+    .container {
+      padding: 40px 15px;
+      border-radius: calc(var(--radius-m) * 2);
+    }
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+    }
+
+    ul {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include media(mobile-m) {
+    p,
+    a,
+    li {
+      font-size: 18px;
+    }
+  }
 }
