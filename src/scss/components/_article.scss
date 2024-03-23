@@ -31,4 +31,34 @@
       margin-bottom: 40px;
     }
   }
+
+  @include media(tablet) {
+    padding: 44px 0;
+
+    &__image {
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: var(--radius-m);
+    }
+
+    &__text {
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @include media(mobile-m) {
+    h1 {
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+    &__image {
+      aspect-ratio: 3 / 2;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
 }

@@ -92,6 +92,7 @@
   @include media(tablet) {
     &__recents {
       grid-template-columns: 1fr;
+      grid-auto-rows: auto;
       gap: rem(60);
     }
 
@@ -112,6 +113,35 @@
     &__name,
     &__link {
       padding: 0 20px;
+    }
+
+    &--resources {
+      padding: 44px 0;
+
+      .blog__intro {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .blog__recents {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .blog__recent {
+        border-radius: var(--radius-m);
+      }
+
+      .blog__img {
+        border-radius: var(--radius-m) var(--radius-m) 0 0;
+      }
+    }
+  }
+  @include media(mobile-l) {
+    &--resources {
+      .blog__recents {
+        grid-template-columns: 1fr;
+      }
     }
   }
 

@@ -68,5 +68,18 @@
 
   @include media(tablet) {
     padding: 44px 0;
+
+    summary {
+      padding: 24px 30px 24px 15px;
+
+      + div {
+        padding: 0 15px 24px;
+      }
+
+      &::before {
+        top: 15px;
+        right: 15px;
+      }
+    }
   }
 }
