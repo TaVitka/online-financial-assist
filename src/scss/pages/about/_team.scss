@@ -56,6 +56,7 @@
   @include media(tablet) {
     &__list {
       grid-template-columns: 1fr;
+      grid-auto-rows: auto;
     }
 
     &__item {

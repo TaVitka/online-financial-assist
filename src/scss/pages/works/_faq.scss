@@ -37,7 +37,7 @@
     position: relative;
     padding: 24px 58px 25px;
     font-weight: var(--fw-600);
-    font-size: clamp(22px, 1rem + 1vi, 28px);
+    font-size: clamp(20px, 1rem + 1vi, 28px);
     color: var(--color-purple-500);
     cursor: pointer;
 
@@ -79,6 +79,18 @@
       &::before {
         top: 15px;
         right: 15px;
+      }
+    }
+  }
+
+  @include media(mobile-m) {
+    summary {
+      font-size: 18px;
+    }
+
+    details {
+      p {
+        font-size: 18px;
       }
     }
   }

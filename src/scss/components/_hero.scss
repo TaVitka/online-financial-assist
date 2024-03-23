@@ -5,7 +5,7 @@
   $root: &;
   padding: 0;
 
-  .overlay {
+  .overlay:not(.hero--home .hero__inner) {
     &::before {
       opacity: 0;
 
