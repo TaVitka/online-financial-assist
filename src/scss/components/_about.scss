@@ -368,10 +368,6 @@
       gap: 0 rem(80);
     }
 
-    img {
-      object-fit: none;
-    }
-
     .about__box {
       max-width: 565px;
     }
@@ -383,6 +379,28 @@
     p {
       &:not(:last-of-type) {
         margin-bottom: 25px;
+      }
+    }
+
+    @include media(tablet) {
+      h2 {
+        margin-bottom: 30px;
+      }
+
+      .about__inner {
+        flex-direction: column-reverse;
+        gap: 30px;
+      }
+
+      .about__box {
+        max-width: 100%;
+      }
+
+      .about__image,
+      img {
+        width: 100%;
+        object-fit: contain;
+        aspect-ratio: 4 / 2;
       }
     }
   }
@@ -416,9 +434,13 @@
       display: none;
     }
 
-    &--service {
+    &--service:not(.about--benefits) {
       padding: 44px 0 0;
     }
+
+    //&--benefits {
+    //  padding: 44px 0;
+    //}
   }
 
   @include media(mobile-l) {

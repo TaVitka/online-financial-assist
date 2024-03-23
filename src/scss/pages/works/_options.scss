@@ -78,4 +78,42 @@
     line-height: 1.1;
     font-weight: var(--fw-600);
   }
+
+  @include media(tablet) {
+    padding: 44px 0;
+
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      padding-right: 94px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  @include media(mobile-m) {
+    &__item {
+      padding: 10px;
+
+      &::before {
+        height: 50px;
+        width: 50px;
+        right: 10px !important;
+        top: 10px;
+      }
+
+      h3 {
+        padding-bottom: 40px;
+        padding-right: 60px;
+      }
+
+      p {
+        width: 100%;
+      }
+    }
+  }
 }

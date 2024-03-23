@@ -102,6 +102,10 @@
   @include media(tablet) {
     padding: rem(44) 0;
 
+    br {
+      display: none;
+    }
+
     &__inner {
       flex-direction: column;
       gap: 40px;
