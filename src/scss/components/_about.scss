@@ -84,6 +84,14 @@
     }
   }
 
+  &--home {
+    @include media(tablet-wide) {
+      .about__image {
+        position: relative;
+      }
+    }
+  }
+
   &--history {
     padding: rem(70) 0;
 
@@ -190,6 +198,10 @@
 
     .about__box {
       max-width: 492px;
+
+      @include media(tablet) {
+        max-width: 100%;
+      }
     }
 
     .about__phrase {
@@ -199,10 +211,20 @@
     h2 {
       font-size: clamp(34px, 2.5rem + 1vi, 48px);
       color: var(--color-blue-700);
+
+      @include media(tablet) {
+        font-size: 32px;
+      }
     }
 
     .about__text {
       font-size: 23px;
+    }
+
+    @include media(desktop) {
+      .about__inner {
+        gap: 30px;
+      }
     }
   }
 
@@ -220,6 +242,32 @@
         top: 72px;
       }
     }
+
+    @include media(desktop) {
+      .about__image {
+        img {
+          position: static;
+        }
+      }
+
+      .about__box {
+        max-width: 100%;
+      }
+
+      .about__image {
+        min-height: auto;
+      }
+    }
+
+    @include media(mobile-l) {
+      .about__inner {
+        flex-direction: column;
+      }
+
+      .about__content {
+        width: 100%;
+      }
+    }
   }
 
   &--reporting,
@@ -227,6 +275,10 @@
   &--auditing {
     .about__inner {
       gap: 0 rem(100);
+
+      @include media(desktop) {
+        gap: 30px;
+      }
     }
   }
 
@@ -238,6 +290,19 @@
       top: 0;
       left: 0;
       transform: translateY(-25%);
+    }
+
+    @include media(tablet) {
+      &::before {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    @include media(mobile-l) {
+      .about__inner {
+        flex-direction: column;
+      }
     }
   }
 
@@ -255,11 +320,31 @@
     .about__content {
       width: 87%;
     }
+
+    @include media(mobile-l) {
+      .about__inner {
+        flex-direction: column;
+      }
+
+      .about__content {
+        width: 100%;
+      }
+    }
   }
 
   &--financial {
     .about__inner {
       gap: 0 rem(60);
+    }
+
+    @include media(desktop) {
+      .about__inner {
+        gap: 30px;
+      }
+
+      img {
+        object-fit: contain;
+      }
     }
   }
 
@@ -308,10 +393,6 @@
       align-items: center;
     }
 
-    &__image {
-      position: relative;
-    }
-
     &__img {
       inset: 0;
       filter: opacity(0.5) blur(1px) brightness(0.5);
@@ -329,6 +410,14 @@
       &:not(:last-of-type) {
         margin-bottom: 30px;
       }
+    }
+
+    br {
+      display: none;
+    }
+
+    &--service {
+      padding: 44px 0 0;
     }
   }
 

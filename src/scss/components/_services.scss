@@ -91,6 +91,10 @@
       margin-bottom: rem(128);
       text-align: center;
       letter-spacing: -1px;
+
+      @include media(tablet) {
+        margin-bottom: 30px;
+      }
     }
 
     .services__grid {

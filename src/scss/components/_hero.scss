@@ -48,25 +48,6 @@
   &--about {
     .hero__inner {
       background-position: 81% 80px;
-
-      @include media(tablet-wide) {
-        background-position: 100% center;
-        background-size: 40%;
-      }
-
-      @include media(tablet) {
-        background-size: 30%;
-      }
-
-      @include media(mobile-l) {
-        background-image: none !important;
-      }
-    }
-
-    @include media(mobile-l) {
-      .hero__desc {
-        color: var(--color-white);
-      }
     }
   }
 
@@ -131,6 +112,37 @@
       }
 
       p {
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &--about,
+  &--services {
+    .hero__inner {
+      @include media(tablet-wide) {
+        background-position: 100% center;
+        background-size: 40%;
+      }
+
+      @include media(tablet) {
+        min-height: 450px;
+      }
+
+      @include media(mobile-l) {
+        background-image: none !important;
+      }
+    }
+
+    @include media(tablet-wide) {
+      .hero__content {
+        margin: 0;
+        padding: 0 15px;
+      }
+    }
+
+    @include media(mobile-l) {
+      .hero__desc {
         color: var(--color-white);
       }
     }

@@ -20,7 +20,7 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0 rem(61);
+    gap: rem(61);
     max-width: 1095px;
     width: 100%;
   }
@@ -34,6 +34,25 @@
   &__content {
     p {
       font-size: clamp(20px, 1rem + 1vi, 23px);
+    }
+  }
+
+  @include media(tablet) {
+    padding: 44px 0;
+
+    &__items {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @include media(mobile-l) {
+    h2 {
+      padding-right: 0;
+      text-align: center;
+    }
+
+    &__items {
+      gap: 30px;
     }
   }
 }
