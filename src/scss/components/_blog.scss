@@ -59,7 +59,7 @@
 
     .blog__intro {
       width: 65%;
-      margin-bottom: (60);
+      margin-bottom: rem(60);
       font-family: var(--font-family-secondary);
       font-size: clamp(20px, 1rem + 1vi, 26px);
       color: var(--color-gray-700);

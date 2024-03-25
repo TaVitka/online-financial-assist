@@ -21,33 +21,33 @@
   --color-white: #fff;
   --color-black: #111111;
   --color-dark: #000207;
-  --color-gray-100: #FBF8FF;
-  --color-gray-400: #F2F2F2;
-  --color-gray-700: #2C2C2E;
+  --color-gray-100: #fbf8ff;
+  --color-gray-400: #f2f2f2;
+  --color-gray-700: #2c2c2e;
 
-  --color-red-100: #FDEDFC;
-  --color-red-120: #FAEDFF;
-  --color-red-391: #FF8BD1E8;
-  --color-red-400: #FD4C5C;
-  --color-red-600: #B03D48;
-  --color-purple-100: #EEEDFD;
-  --color-purple-200: #E3CEFB;
-  --color-purple-391: #D299FFE8;
-  --color-purple-400: #C796FF;
+  --color-red-100: #fdedfc;
+  --color-red-120: #faedff;
+  --color-red-391: #ff8bd1e8;
+  --color-red-400: #fd4c5c;
+  --color-red-600: #b03d48;
+  --color-purple-100: #eeedfd;
+  --color-purple-200: #e3cefb;
+  --color-purple-391: #d299ffe8;
+  --color-purple-400: #c796ff;
   --color-purple-510: rgba(120, 27, 255, 0.1);
-  --color-purple-500: #781BFF;
+  --color-purple-500: #781bff;
   --color-purple-503: rgba(120, 27, 255, 0.03);
-  --color-purple-691: #9B8BFFE8;
-  --color-purple-800: #49009D;
-  --color-blue-100: #E4EFFF;
-  --color-blue-700: #000B33;
+  --color-purple-691: #9b8bffe8;
+  --color-purple-800: #49009d;
+  --color-blue-100: #e4efff;
+  --color-blue-700: #000b33;
   --color-blue-770: rgba(0, 11, 51, 0.7);
   --color-blue-760: rgba(0, 11, 51, 0.6);
 
-  //shadow
-  --shadow-main: 0px 4px 40px 0px #2B59FF14;
+  // shadow
+  --shadow-main: 0px 4px 40px 0px #2b59ff14;
 
-  //  radius
+  // radius
   --radius-round: 50%;
   --radius-main: 40px;
   --radius-secondary: 60px;
@@ -56,11 +56,11 @@
   --radius-xs: 3px;
 
   //gradient
-  --gradient-main: linear-gradient(180deg, #DDC0FF 0%, #6615C4 100%);
+  --gradient-main: linear-gradient(180deg, #ddc0ff 0%, #6615c4 100%);
   --gradient-secondary: linear-gradient(0.13deg, rgba(140, 48, 245, 0.4) 0.11%, rgba(200, 161, 244, 0.4) 111.96%);
   --gradient-section: linear-gradient(0.13deg, rgba(140, 48, 245, 0.2) 0.11%, rgba(200, 161, 244, 0.2) 111.96%);
   --gradient-accent: linear-gradient(0.13deg, rgba(254, 224, 91, 0.2) 0.11%, rgba(200, 161, 244, 0.2) 111.96%);
-  --gradient-border: linear-gradient(90deg, #8C30F5 0%, #FF4B5C 100%);
+  --gradient-border: linear-gradient(90deg, #8c30f5 0%, #ff4b5c 100%);
 
   //icons
   --icon-bg-wave: url("data:image/svg+xml,%3Csvg width='1440' height='740' viewBox='0 0 1440 740' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.03' d='M725.828 705.729C412.2 764.881 135.9 735.691 0 705.729V0H1440V705.729C1345.85 683.917 1001.11 653.809 725.828 705.729Z' fill='%23781BFF'/%3E%3C/svg%3E");

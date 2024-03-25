@@ -47,6 +47,17 @@
       padding-bottom: 18px;
     }
 
+    &:nth-child(2),
+    &:nth-child(3){
+      .explain__text {
+        width: 75%;
+
+        @include media(tablet) {
+          width: 100%;
+        }
+      }
+    }
+
     &:not(:last-of-type) {
       margin-bottom: rem(41);
     }
@@ -87,7 +98,7 @@
     line-height: 1.1;
   }
 
-  &__txt {
+  &__text {
     font-size: clamp(18px, 1rem + 1vi, 23px);
     font-weight: var(--fw-400);
     line-height: 1.2;
@@ -95,16 +106,17 @@
 
   &--works {
     h2 {
+      width: 75%;
       letter-spacing: -0.5px;
+
+      @include media(tablet) {
+        width: 100%;
+      }
     }
   }
 
   @include media(tablet) {
     padding: rem(44) 0;
-
-    br {
-      display: none;
-    }
 
     &__inner {
       flex-direction: column;

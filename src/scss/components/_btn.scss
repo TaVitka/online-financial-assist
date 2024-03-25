@@ -94,17 +94,21 @@
   right: 105px;
 
   &::after {
-    @include contain-background();
-
     content: '';
     position: absolute;
     inset: 0;
     background-image: url("../images/icons/arrow-next.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
   }
 
   @include media(tablet-wide) {
-    top: unset;
-    right: 10%;
-    bottom: 20px;
+    right: 0;
+    width: 60px;
+  }
+
+  @include media(mobile-sm) {
+    width: 40px;
   }
 }

@@ -46,7 +46,6 @@
   &__list {
     display: flex;
     align-items: center;
-    //margin: 0 clamp(30px, rem(106.5), 106.5px) 0 0;
     margin: 0 106.5px 0 0;
 
     @include media(desktop-medium) {

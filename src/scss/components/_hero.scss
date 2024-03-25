@@ -9,7 +9,7 @@
     &::before {
       opacity: 0;
 
-      @include media(mobile-l) {
+      @include media(tablet) {
         opacity: 1;
       }
     }
@@ -130,36 +130,23 @@
     }
 
     @include media(tablet) {
-      .hero__inner {
-        background-size: 50%;
-        background-position: right 70%;
-      }
-
       .hero__content {
         margin: 0;
       }
 
       .hero__item {
-        padding: 20px 15px;
+        padding: 15px 10px;
 
         p {
-          font-size: 20px;
+          font-size: 18px;
           letter-spacing: -1px;
         }
       }
     }
 
-    @include media(mobile-s) {
+    @include media(mobile-m) {
       .hero__content {
         width: 100%;
-      }
-
-      .hero__items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: rem(15);
-        text-align: center;
       }
     }
   }
@@ -176,10 +163,6 @@
       @include media(tablet) {
         min-height: 450px;
       }
-
-      @include media(mobile-l) {
-        background-image: none !important;
-      }
     }
 
     @include media(tablet-wide) {
@@ -189,7 +172,7 @@
       }
     }
 
-    @include media(mobile-l) {
+    @include media(tablet) {
       .hero__desc {
         color: var(--color-white);
       }
@@ -198,10 +181,23 @@
 
   @include media(tablet) {
     &__inner {
+      position: relative;
       min-height: 450px;
       padding: 44px 0;
-      background-position: right center;
-      background-size: 55%;
+      background-image: none !important;
+
+      &::after {
+        @include cover-background;
+
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 400px;
+        height: 225px;
+        background-image: url("../images/hero/home.png");
+        z-index: -1;
+      }
     }
 
     &__content {
@@ -216,24 +212,82 @@
     &__desc {
       margin-bottom: 20px;
     }
-  }
 
-  @include media(mobile-s) {
-    &__inner {
-      background-image: none !important;
-
-      &--about,
-      &--services,
-      &--works,
-      &--security {
-        .hero__inner {
-          background-image: none !important;
-        }
+    &--about {
+      .hero__inner::after {
+        width: 280px;
+        height: 280px;
+        background-image: url("../images/hero/about.png");
       }
     }
 
+    &--services {
+      .hero__inner::after {
+        width: 300px;
+        height: 280px;
+        background-image: url("../images/hero/services.png");
+      }
+    }
+
+    &--works {
+      .hero__inner::after {
+        width: 300px;
+        height: 240px;
+        background-image: url("../images/hero/works.png");
+      }
+    }
+
+    &--security {
+      .hero__inner::after {
+        width: 260px;
+        height: 240px;
+        background-image: url("../images/works/security.png");
+      }
+    }
+  }
+
+  @include media(mobile-m) {
     h1 {
       width: 100%;
     }
+
+    &__inner {
+      padding: 30px 0 rem(150);
+
+      &::after {
+        width: 250px;
+        height: 150px;
+      }
+    }
+
+    &--about {
+      .hero__inner::after {
+        width: 220px;
+        height: 220px;
+      }
+    }
+
+    &--services {
+      .hero__inner::after {
+        width: 240px;
+        height: 220px;
+      }
+    }
+
+    &--works {
+      .hero__inner::after {
+        width: 200px;
+        height: 170px;
+      }
+    }
+
+    &--security {
+      .hero__inner::after {
+        width: 180px;
+        height: 200px;
+        bottom: 70px;
+      }
+    }
+
   }
 }

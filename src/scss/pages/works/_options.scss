@@ -70,6 +70,17 @@
         background-image: url("../images/icons/schedulign-icon.svg");
       }
     }
+
+    &--tailored,
+    &--additional {
+      h3 {
+        width: 65%;
+
+        @include media(tablet) {
+          width: 100%;
+        }
+      }
+    }
   }
 
   h3 {
@@ -88,10 +99,6 @@
 
     &__item {
       padding-right: 94px;
-    }
-
-    br {
-      display: none;
     }
   }
 

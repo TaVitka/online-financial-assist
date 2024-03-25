@@ -45,22 +45,27 @@
     }
   }
 
-  @include media(tablet-wide) {
-    &__wrapper {
-      padding-bottom: rem(100);
-    }
-
-    &__slider {
-      max-width: 100%;
-    }
-  }
-
   @include media(tablet) {
     padding: 44px 0;
 
+    &__slider {
+      width: 80%;
+    }
+
     &__slide {
+
       h3 {
         margin-bottom: 30px;
+      }
+    }
+  }
+
+  @include media(mobile-s) {
+    &__slide {
+      padding: rem(32) rem(10);
+      
+      p {
+        font-size: 18px;
       }
     }
   }
